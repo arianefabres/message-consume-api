@@ -1,0 +1,20 @@
+{
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "eject": "expo eject",
+    "dev": "ttab -t 'server' npm run start-server && ttab -t 'application' npm run start-expo",
+    "start-server": "cd server && npm install && nodemon api.js",
+    "start-expo": "cd application && npm install && expo start"
+  },
+  "dependencies": {
+    "ttab": "^0.7.1"
+  },
+  "devDependencies": {
+    "typescript": "~4.0.0"
+  },
+  "private": true
+}
